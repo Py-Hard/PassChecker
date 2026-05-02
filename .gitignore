@@ -1,0 +1,29 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS metadata files
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# macOS volume files
+.VolumeIcon.icns
+
+# Thumbnails
+Icon?
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE/editor folders
+.vscode/
+.idea/
