@@ -51,4 +51,4 @@ while True:
 		break
 
 	score = scorepass(inp)
-	print("score:", score)
+	print("score:", round(score, 1))
