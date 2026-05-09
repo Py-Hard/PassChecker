@@ -10,6 +10,9 @@ class Color:
 
 # Scoring Function
 def scorepass(inp):
+	symbol_count = 0
+	repeat_count = 1
+	last_char = None
 	score = 0.0
 	length = len(inp)
 	lower = inp.lower()
@@ -35,11 +38,12 @@ def scorepass(inp):
 		# repeating character punishment
 		if c == last_char:
 			repeat_count += 1
-		if repeat_count > 3:
-			score -= 0.02 * (repeat_count - 3)
+			if repeat_count > 3:
+				score -= 0.02 * (repeat_count - 3)
 		else:
 			repeat_count = 1
-			last_char = c
+
+		last_char = c
 
 		if c.islower():
 			ctype = "lower"
